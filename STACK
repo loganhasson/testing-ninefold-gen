@@ -1,0 +1,39 @@
+This generator has set up the following stack:
+
+  1. Testing
+    * RSpec
+    * Capybara
+    * Database Cleaner
+    * SimpleCov
+    * Guard
+  2. Frontend
+    * Bootstrap
+    * Disabled Turbolinks
+    * Google Analytics
+    * Precompiled assets in production
+  3. Gem groups set up for easy Heroku deployment
+    * Postgres will work out of the box. No configuration necessary.
+
+TODO:
+  1. An MIT License file has been created for you
+    * Add your name and the year
+  2. A README.md file has been started for you
+    * Add relavent information and screenshots for your app
+  3. Google Analytics is set up to track your app
+    * Set up an application on Google Analytics
+    * You will need to add your analytics tracking code to `config/secrets.yml`
+
+Deploying to Heroku:
+  1. `bin/setup <app_name>`
+  2. `bin/deploy`
+
+Deploying to Ninefold:
+  1. Create your app on Ninefold
+  2. Add the given SSH key to your account on GitHub
+  3. Choose the option for a single-server app
+  4. Change the name of the Environment Variable from SECRET_TOKEN to SECRET_KEY_BASE
+  4. Click deploy (it will probably fail)
+  5. Copy the relevant database information from the Database tab
+  6. Paste that info in your `config/secrets.yml` file
+  7. Push your changes
+  8. Re-deploy on Ninefold
